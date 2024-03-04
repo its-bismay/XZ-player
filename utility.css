@@ -1,0 +1,16 @@
+.f{
+    display: flex;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #0B2545;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #134074;
+}

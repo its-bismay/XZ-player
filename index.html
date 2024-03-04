@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+    <title>XZ-Player.com</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <div class="container f">
+      <div class="left">
+        <div class="home">
+          <i class="bx bx-x-circle"></i>
+          <div class="logo">
+            <span class="blue">XZ</span><span>-Player</span>
+          </div>
+          <div class="icons">
+            <div class="icon1">
+              <i class="bx bxs-home"></i>
+              <span>Home</span>
+            </div>
+            <div class="icon1">
+              <i class="bx bx-search"></i>
+              <span>Search</span>
+            </div>
+          </div>
+        </div>
+        <div class="library">
+          <div class="heading">
+            <i class="bx bx-library"></i>
+            <span>Your Library</span>
+          </div>
+          <div class="songlist">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="header">
+          <div class="nav">
+            <i class="bx bx-menu"></i>
+            <i class="bx bxs-chevron-left"></i>
+            <i class="bx bxs-chevron-right"></i>
+          </div>
+          <div class="btns">
+            <button class="signup">Sign Up</button>
+            <button class="login">Log In</button>
+          </div>
+        </div>
+        <div class="playerlist">
+          <span>Playlists</span>
+          <div class="cardbox">
+          </div>
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+            <div class="songinfo"></div>
+            <div class="playbtns">
+              <i class="bx bx-skip-previous" id="prev"></i>
+              <i class="bx bx-play-circle" id="play"></i>
+              <i class="bx bx-skip-next" id="next"></i>
+            </div>
+            <div class="songtime"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body{
+    background-color: #0B2545;
+}
+
+.left{
+    width: 25vw;
+    padding: 10px;
+    background-color: #0B2545;
+}
+
+.right{
+    margin: 10px 10px 10px 1px;
+    width: 75vw;
+    color: #fff;
+    background-color: #13315C;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #13315C;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.logo{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.blue{
+    color: aqua;
+    font-size: 22px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 23px;
+}
+
+.icon1 span{
+    font-size: 18px;
+}
+
+.library{
+    padding: 20px;
+    background-color: #13315C;
+    color: #fff;
+    border-radius: 10px;
+    min-height: 76vh;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 5px;
+}
+
+.header{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #134074;
+}
+
+.header > *{
+    padding: 15px;
+}
+
+.bx-menu{
+    display: none;
+}
+
+.playerlist{
+    padding: 15px;
+}
+.playerlist span{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.cardbox{
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 65vh;
+}
+
+.playerlist .card{
+    width: 180px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #134074;
+    position: relative;
+    transition: .5s background-color ease;
+}
+
+.playerlist .card:hover{
+    background: #8DA9C4;
+}
+
+.card > *{
+    padding-top: 4px;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.card h3{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16.5px;
+}
+
+.card p{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.playbtn{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 130px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: aqua;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    opacity: 0;
+    transition: .3s opacity ease;
+}
+
+.playerlist .card:hover .playbtn{
+    opacity: 1;
+}
+
+.playbtn i{
+    margin-top: -2px;
+    margin-left: 4px;
+    font-size: 28px;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.signup{
+    right: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #134074;
+    color: grey;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.login{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 2px 8px;
+    background: aqua;
+    color: #134074;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.signup:hover{
+    color: #fff;
+}
+
+.playbar{
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 60px;
+    background-color: #8DA9C4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.playbar .songinfo{
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+}
+
+.playbtns{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 33px;
+    gap: 15px;
+    max-width: 40%;
+}
+
+.playbtns i{
+    cursor: pointer;
+}
+
+.songlist{
+    margin-top: 15px;
+    overflow-y: auto;
+    max-height: 55vh;
+}
+
+.songlist ul li{
+    width: 95%;
+    padding: 10px;
+    color: #C7CCDB;
+    font-size: 11px;
+    line-height: 11px;
+    list-style-type: decimal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    word-break: break-all;
+}
+
+.random{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    max-width: 55%;
+}
+
+.songlist ul li:hover{
+    color: #fff;
+    background-color: #8DA9C4;
+}
+
+.playn{
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    line-height: 11px;
+}
+
+.songlist ul li:hover .playn{
+    color: aqua;
+}
+
+.playn span{
+    opacity: 0;
+}
+
+.songlist ul li:hover .playn span{
+    opacity: 1;
+}
+
+.seekbar{
+    margin-left: -10px;
+    top: 0;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.circle{
+    top: 50%;
+    left:0;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: left .1s ;
+}
+
+.bx-x-circle{
+    display: none;
+}
+
+/* custom scrool bar */
+
+
+@media(max-width: 1150px){
+    body{
+        padding: 15px;
+    }
+    .left{
+        position: absolute;
+        z-index: 5;
+        left: -380px;
+        transition: all .1s;
+        padding: 0 15px 15px 15px;
+        height: 95vh;
+        width: 300px;
+    }
+
+    .right{
+        margin: 0;
+        width: 100vw;
+        height: 95vh;
+    }
+
+    .cardbox{
+        justify-content: center;
+    }
+
+    .header .nav{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 28px;
+    }
+
+    .bx-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .library{
+        min-height: 73.5vh;
+    }
+
+    .bx-x-circle{
+        font-size: 28px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .playbar .songinfo,
+    .playbar .songtime{
+        font-size: 12px;
+    }
+
+    .playerlist .card{
+        width: 30vw;
+    }
+
+    .playbtn{
+        cursor: pointer;
+        position: absolute;
+        top: 60%;
+        left: 75%;
+        transform: translate(-50%,-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .playbtn i{
+        font-size:33px;
+    }
+}
+
+@media(max-width: 480px){
+    .playerlist .card{
+        width: 70vw;
+    }
+
+    .playbtn{
+        cursor: pointer;
+        position: absolute;
+        top: 65%;
+        left: 80%;
+        transform: translate(-50%,-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+    }
+
+    .playbtn i{
+        font-size:33px;
+    }
+
+    .playbar{
+        min-height: 80px;
+    }
+}
